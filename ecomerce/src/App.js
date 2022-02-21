@@ -1,23 +1,21 @@
-import { useState } from 'react'
-import logo from './logo.svg';
-import './App.css'
-import navBar from './components/navbar';
 
+import './App.css'
+
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import Navbar from './components/Navbar1';
+import Inicio from './components/Paginas/Inicio';
+import Contacto from './components/Paginas/Contacto';
 function App() {
 
-  const [count, setCount] = useState(0)
-  const style = {backgroundColor: 'blue'}
+<div className="App">
+  <h1>Navbar</h1>
 
-  return(
-    <div 
-    className='App'
-    style={style}
-    >
-      <navBar />
-      <input />
-      hola soy una app
-    </div>
-  )
+  <router>
+    <navbar/>
+  </router>
+
+
+
+</div>
 }
-
 export default App;
