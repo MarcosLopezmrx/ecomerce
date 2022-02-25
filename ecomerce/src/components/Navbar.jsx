@@ -3,7 +3,7 @@ import CartWidget from './CartWidget'
 
 
 const Navbar = () =>{
-  <CartWidget/>
+  
     return(
         <div>
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,8 +22,10 @@ const Navbar = () =>{
         </li>
 
       </ul>
+
     </div>
   </div>
+  <CartWidget/>
 </nav>
         </div>
     )

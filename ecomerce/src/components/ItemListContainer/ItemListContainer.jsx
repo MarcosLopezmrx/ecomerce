@@ -1,13 +1,13 @@
 import React from 'react'
-import TituloApp from '../Titulo/TituloApp'
+/* import TituloApp from '../Titulo/TituloApp' */
 
-function ComponenteContenedor( { saludo } ) {
+function ItemListContainer( { saludo } ) {
   return (
     <div>
-        <TituloApp titulo= {'titulo contenedor'} subtitulo='soy subtitulo de contenedor' saludo={() => console.log('saludo')}  />
+      {/*   <TituloApp titulo= {'titulo contenedor'} subtitulo='soy subtitulo de contenedor' saludo={() => console.log('saludo')} /> */} 
         <h3>{saludo}</h3>
     </div>
   )
 }
 
-export default ComponenteContenedor
+export default ItemListContainer
