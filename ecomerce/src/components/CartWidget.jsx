@@ -1,11 +1,7 @@
-import React, {Component } from 'core-js/library/fn/reflect/es7/metadata'
+import React from 'react'
 
-
-render(){
-    return(
-        <img src="IMG/carrito.png" alt="" />
-    )
+function CartWidget(){
+    return <img src="img/carrito.png" alt="esto es un carrito" />
+    
 }
-
-
 export default CartWidget
