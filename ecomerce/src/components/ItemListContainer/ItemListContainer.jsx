@@ -1,11 +1,9 @@
 import React from 'react'
-/* import TituloApp from '../Titulo/TituloApp' */
 
-function ItemListContainer( { saludo } ) {
+function ItemListContainer( { cartelera } ) {
   return (
     <div>
-      {/*   <TituloApp titulo= {'titulo contenedor'} subtitulo='soy subtitulo de contenedor' saludo={() => console.log('saludo')} /> */} 
-        <h3>{saludo}</h3>
+        <h3>{cartelera}</h3>
     </div>
   )
 }

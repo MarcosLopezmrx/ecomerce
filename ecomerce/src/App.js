@@ -13,7 +13,7 @@ function App() { // componente contendor
           <Navbar/>
           
           
-          <ItemListContainer saludo={'Cartelera de productos'} />
+          <ItemListContainer cartelera={'Cartelera de productos'} />
       </div>
   )
   }
