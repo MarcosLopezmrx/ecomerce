@@ -1,7 +1,7 @@
 import React from 'react'
 
 function CartWidget(){
-    return <img src="img/carrito.png" alt="esto es un carrito" />
+    return <img src="components/img/carrito.png" alt="aqui pondria mi carrito SI SOLO TOMARA LA IMAGEN" />
     
 }
 export default CartWidget
