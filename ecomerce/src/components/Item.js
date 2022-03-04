@@ -1,11 +1,15 @@
 import React from 'react'
+import ItemCount from './ItemListContainer/ItemCount'
 
-const Item = (props) => {
+const Item = (product) => {
   return (
     <div>
         <div>
-            <img src={props.img} alt="50px" />
-            <h2>{props.name} </h2>
+            <img src={product.img} alt="50px" />
+            <h2>{product.name} </h2>
+            <p>{product.description}</p>
+            <p>{product.price}</p>
+            <ItemCount/>
         </div>
     </div>
   )

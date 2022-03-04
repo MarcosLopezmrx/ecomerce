@@ -1,30 +1,22 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import productsApi from '../promise';
 import Item from './Item';
 
-const ItemList = () => {
-    const [Items, setItems] = useState([
-        {
-            id:1,
-            name:"producto1",
-            img:"#",
-        },
-        {
-            id:2,
-            name:"producto2",
-            img:"#",
-        },
-        {
-            id:3,
-            name:"producto3",
-            img:"#",
-        }
-    ])
+function ItemList () {
+   
+    const [products, setProducts] = useState([])
+    useEffect(() => {
+        productsApi
+        .then((response) =>{
+            setProducts(response)
+        })
+        .catch((error) => {console.log(error)})
+    },)
   return (
     <div className='row'>
-        {Items.map((Items) =>{
-        return <Item name={Item.name} img={Item.img} />;  
-        
-        })}
+        {
+            products.map((product) => <Item key={product.id} img={product.img} name={product.name} description={product.description} price={product.price} />)
+        }
     </div>
   );
 };

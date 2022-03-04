@@ -6,7 +6,6 @@ function ItemListContainer( { cartelera } ) {
   return (
     <div>
         <h3>{cartelera}</h3>
-        <ItemCount/>
     </div>
     
   )
